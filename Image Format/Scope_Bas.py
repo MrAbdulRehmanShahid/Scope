@@ -1,20 +1,20 @@
 
 x = 10  # Global variable
 
-def foo():
+def fool():
     x = 20  # Local variable
     print("Inside foo():", x)
 
-foo()
+fool()
 print("Outside foo():", x)
 
 x = 10
 
-def foo():
+def fool():
     global x  # Declare we're using the global x
     x = 20
 
-foo()
+fool()
 print(x)
 
 def outer():
